@@ -71,11 +71,11 @@ select {
         z-index: 100;
     }
     .h1 svg {
-        width: 80%;
+        width: 90%;
     }
     .slogan {
         display: inline-block;
-        padding-right: 6px !important;
+        padding-right: 12px !important;
         /* width: 100%; */
         font-family: 'Roboto', sans-serif;
         font-size: 22px !important;
