@@ -73,10 +73,13 @@ p {
         width: 95vw;
     }
     .logo {
-        margin-top: -54px;
-        height: 20vh;
+        position: absolute;
+        bottom: 32px;
+        left: -62px;
+        margin-top: 40px;
+        height:24px;
         margin-right: 24px;
-        margin-left: 32px;
+        /* margin-left: 32px; */
     }
     p {
         margin: 32px;
