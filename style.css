@@ -91,7 +91,7 @@ input::input-placeholder {
         flex-direction: column !important;
         -ms-flex-line-pack: center !important;
         align-content: center !important;
-        margin-top: 9vh !important;
+        margin-top: 12vh !important;
         z-index: 100;
     }
     .h1 svg {
@@ -344,7 +344,7 @@ body {
     resize: none;
     font-size: 24px;
     color: #DA4B81;
-
+    line-height: 26px;
 }
 
 .form-email::-webkit-input-placeholder {
