@@ -23,8 +23,23 @@ select {
     padding: 0
 }
 
+a {
+    color: #6F6F6F;
+    -webkit-text-decoration-line:none;
+            text-decoration-line:none;
+}
+
 input {
+    line-height: normal;
+    /* for non-ie */
+    line-height: 22px\9;
+    /* for ie */
     outline: none;
+}
+
+input::input-placeholder {
+    text-align: left;
+    vertical-align: center;
 }
 
 @media (max-width: 900px) {
@@ -52,11 +67,16 @@ input {
         align-items: flex-start !important;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
         -ms-flex-line-pack: start !important;
         align-content: flex-start !important;
         padding-left: 28px;
+    }
+
+    .svg-coming svg{
+        margin-left: -33px;
+        margin-top: 14px !important;
     }
     .text-box {
         display: -webkit-box !important;
@@ -71,7 +91,7 @@ input {
         flex-direction: column !important;
         -ms-flex-line-pack: center !important;
         align-content: center !important;
-        margin-top: 12vh !important;
+        margin-top: 9vh !important;
         z-index: 100;
     }
     .h1 svg {
@@ -90,7 +110,7 @@ input {
         line-height: 28px;
     }
     .h2 {
-        margin-top: 24px !important;
+        margin-top: 16px !important;
     }
     .btn {
         display: -webkit-box;
@@ -121,25 +141,29 @@ input {
         display: -ms-flexbox;
         display: flex;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
         width: 80vw !important;
         height: 60px !important;
         background-color: #fff;
         border-radius: 64px;
+        vertical-align: center;
+        margin-top: 40px !important;
     }
     .form-email {
-        width: 50vw !important;
+        width: 55vw !important;
         height: 28px !important;
         border: 0px;
-        border-radius: 64px;
-        padding: 12x 4px 12px 24px !important;
+        border-radius: 64px 0px 0px 64px;
+        padding-left: 16px !important;
         resize: none;
         font-size: 24px;
         color: #FF4A8E;
+    }
+
     }
     .form-email::-webkit-input-placeholder {
         font-size: 16px;
@@ -172,12 +196,14 @@ input {
         transition: all 0.5s ease;
         background-color: #ff4a8ee0;
     }
+    .submit-icon {
+        width: 20px !important;
+    }
     .footer p :hover {
         -webkit-text-decoration-line: underline;
         text-decoration-line: underline;
         color: #DA4B81;
     }
-}
 
 a {
     -webkit-text-decoration-line: none !important;
@@ -229,8 +255,14 @@ body {
 } */
 
 .text-box {
-    margin-top: 30vh;
+    margin-top: 20vh;
     z-index: 100;
+}
+
+
+.svg-coming svg{
+    margin-top: 32px;
+    height: 24px; 
 }
 
 .h2 {
@@ -290,40 +322,45 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 540px;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 440px;
     height: 64px;
     background-color: #fff;
     border-radius: 64px;
+    margin-top: 60px;
 }
 
 .form-email {
-    width: 380px;
+    width: 350px;
     height: 32px;
     border: 0px;
-    border-radius: 64px;
-    padding: 16px 16px 16px 24px;
+    border-radius: 64px 0 0 64px;
+    /* padding: 16px 16px 16px 24px; */
+    padding-left: 24px;
     resize: none;
     font-size: 24px;
     color: #DA4B81;
-    line-height: 32px;
+
 }
 
 .form-email::-webkit-input-placeholder {
+    text-align: left;
     font-size: 16px;
     color: #B3B3B3;
 }
 
 .form-email:-ms-input-placeholder {
+    text-align: left;
     font-size: 16px;
     color: #B3B3B3;
 }
 
 .form-email::placeholder {
+    text-align: left;
     font-size: 16px;
     color: #B3B3B3;
 }
@@ -366,4 +403,5 @@ body {
     -webkit-text-decoration-line: underline !important;
     text-decoration-line: underline !important;
     color: #DA4B81;
+}
 }
