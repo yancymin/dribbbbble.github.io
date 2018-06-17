@@ -59,27 +59,31 @@ p {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
+        flex-direction: column;
+     
         justify-content: start;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -ms-flex-line-pack: center;
-        align-content: center;
+    
+        align-items: flex-start;
+       
+        align-content: flex-start;
         height: 100vh;
-        -ms-flex-wrap: wrap;
+ 
         flex-wrap: wrap;
         width: 95vw;
     }
     .logo {
-        position: absolute;
-        bottom: 32px;
-        left: -62px;
-        margin-top: 40px;
+        
+    
+        /* margin-top: 40px; */
         height:24px;
-        margin-right: 24px;
+        width: 180px;
+       
         /* margin-left: 32px; */
+
+        position: absolute;
+        left: 34px;
+        bottom: 40px;
+        
     }
     p {
         margin: 32px;
@@ -98,6 +102,6 @@ p {
         top: 32px;
     }
     .wrap {
-        margin-top: 48px;
+        margin-top: 140px;
     }
 }
