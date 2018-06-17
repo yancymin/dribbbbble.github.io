@@ -57,9 +57,9 @@ select {
         display: -webkit-box !important;
         display: -ms-flexbox !important;
         display: flex !important;
-        -webkit-box-align: center !important;
-        -ms-flex-align: center !important;
-        align-items: center !important;
+        -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+        align-items: flex-start !important;
         -webkit-box-orient: vertical !important;
         -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
@@ -85,7 +85,7 @@ select {
         word-spacing: 4px;
     }
     .h2 {
-        margin-top: -30px !important;
+        margin-top: 30px !important;
     }
     .btn {
         display: -webkit-box;
