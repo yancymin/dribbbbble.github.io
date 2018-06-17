@@ -25,15 +25,11 @@ select {
 
 a {
     color: #6F6F6F;
-    -webkit-text-decoration-line:none;
-            text-decoration-line:none;
+    -webkit-text-decoration-line: none;
+    text-decoration-line: none;
 }
 
 input {
-    line-height: normal;
-    /* for non-ie */
-    line-height: 22px\9;
-    /* for ie */
     outline: none;
 }
 
@@ -67,14 +63,13 @@ input::input-placeholder {
         align-items: flex-start !important;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -ms-flex-line-pack: start !important;
         align-content: flex-start !important;
         padding-left: 28px;
     }
-
-    .svg-coming svg{
+    .svg-coming svg {
         margin-left: -33px;
         margin-top: 14px !important;
     }
@@ -163,47 +158,54 @@ input::input-placeholder {
         font-size: 24px;
         color: #FF4A8E;
     }
+}
 
-    }
-    .form-email::-webkit-input-placeholder {
-        font-size: 16px;
-        color: #B3B3B3;
-    }
-    .form-email:-ms-input-placeholder {
-        font-size: 16px;
-        color: #B3B3B3;
-    }
-    .form-email::placeholder {
-        font-size: 16px;
-        color: #B3B3B3;
-    }
-    .form-email :focus {
-        outline: none;
-        background-color: #121313;
-    }
-    .btn-submit {
-        width: 48px !important;
-        height: 48px !important;
-        background: #FF4A8E;
-        border-radius: 100% !important;
-        border: 0px;
-        margin-right: 6px;
-        outline: none;
-        cursor: pointer;
-    }
-    .btn-submit:hover {
-        -webkit-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-        background-color: #ff4a8ee0;
-    }
-    .submit-icon {
-        width: 20px !important;
-    }
-    .footer p :hover {
-        -webkit-text-decoration-line: underline;
-        text-decoration-line: underline;
-        color: #DA4B81;
-    }
+.form-email::-webkit-input-placeholder {
+    font-size: 16px;
+    color: #B3B3B3;
+}
+
+.form-email:-ms-input-placeholder {
+    font-size: 16px;
+    color: #B3B3B3;
+}
+
+.form-email::placeholder {
+    font-size: 16px;
+    color: #B3B3B3;
+}
+
+.form-email :focus {
+    outline: none;
+    background-color: #121313;
+}
+
+.btn-submit {
+    width: 48px !important;
+    height: 48px !important;
+    background: #FF4A8E;
+    border-radius: 100% !important;
+    border: 0px;
+    margin-right: 6px;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background-color: #ff4a8ee0;
+}
+
+.submit-icon {
+    width: 20px !important;
+}
+
+.footer p :hover {
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+    color: #DA4B81;
+}
 
 a {
     -webkit-text-decoration-line: none !important;
@@ -259,10 +261,9 @@ body {
     z-index: 100;
 }
 
-
-.svg-coming svg{
+.svg-coming svg {
     margin-top: 32px;
-    height: 24px; 
+    height: 24px;
 }
 
 .h2 {
@@ -327,7 +328,7 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 440px;
+    width: 300px;
     height: 64px;
     background-color: #fff;
     border-radius: 64px;
@@ -335,14 +336,15 @@ body {
 }
 
 .form-email {
-    width: 350px;
+    width: 210px;
     height: 32px;
     border: 0px;
     border-radius: 64px 0 0 64px;
     /* padding: 16px 16px 16px 24px; */
     padding-left: 24px;
     resize: none;
-    font-size: 24px;
+    font-size: 16px;
+    font-weight: 500;
     color: #DA4B81;
     line-height: 26px;
 }
@@ -350,19 +352,19 @@ body {
 .form-email::-webkit-input-placeholder {
     text-align: left;
     font-size: 16px;
-    color: #B3B3B3;
+    color: rgba(179, 179, 179, 0.637);
 }
 
 .form-email:-ms-input-placeholder {
     text-align: left;
     font-size: 16px;
-    color: #B3B3B3;
+    color: rgba(179, 179, 179, 0.637);
 }
 
 .form-email::placeholder {
     text-align: left;
     font-size: 16px;
-    color: #B3B3B3;
+    color: rgba(179, 179, 179, 0.637);
 }
 
 .form-email :focus {
@@ -403,5 +405,4 @@ body {
     -webkit-text-decoration-line: underline !important;
     text-decoration-line: underline !important;
     color: #DA4B81;
-}
 }
