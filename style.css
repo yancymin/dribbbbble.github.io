@@ -38,6 +38,11 @@ input::input-placeholder {
     vertical-align: center;
 }
 
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+
+}
+
 @media (max-width: 900px) {
     a {
         -webkit-text-decoration-line: none;
@@ -347,6 +352,7 @@ body {
     font-weight: 500;
     color: #DA4B81;
     line-height: 26px;
+    background-color: #fff;
 }
 
 .form-email::-webkit-input-placeholder {
