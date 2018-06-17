@@ -389,6 +389,12 @@ body {
     background-color: #ff4a8ee0;
 }
 
+.msg {
+    color: #6F6F6F;
+    margin-top: 12px;
+    font-size: 13px;
+}
+
 .footer {
     position: fixed;
     bottom: 24px;
