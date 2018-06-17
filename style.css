@@ -117,23 +117,37 @@ input {
         letter-spacing: 1px;
     }
     .form-wrap {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         width: 80vw !important;
         height: 60px !important;
         background-color: #fff;
         border-radius: 64px;
     }
     .form-email {
-        width: 55vw !important;
+        width: 50vw !important;
         height: 28px !important;
         border: 0px;
         border-radius: 64px;
-        padding: 12x 12px 12px 24px !important;
+        padding: 12x 4px 12px 24px !important;
         resize: none;
         font-size: 24px;
-        color: #DA4B81;
+        color: #FF4A8E;
+    }
+    .form-email::-webkit-input-placeholder {
+        font-size: 16px;
+        color: #B3B3B3;
+    }
+    .form-email:-ms-input-placeholder {
+        font-size: 16px;
+        color: #B3B3B3;
     }
     .form-email::placeholder {
         font-size: 16px;
@@ -154,6 +168,7 @@ input {
         cursor: pointer;
     }
     .btn-submit:hover {
+        -webkit-transition: all 0.5s ease;
         transition: all 0.5s ease;
         background-color: #ff4a8ee0;
     }
@@ -271,9 +286,15 @@ body {
 }
 
 .form-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 540px;
     height: 64px;
     background-color: #fff;
@@ -289,6 +310,17 @@ body {
     resize: none;
     font-size: 24px;
     color: #DA4B81;
+    line-height: 32px;
+}
+
+.form-email::-webkit-input-placeholder {
+    font-size: 16px;
+    color: #B3B3B3;
+}
+
+.form-email:-ms-input-placeholder {
+    font-size: 16px;
+    color: #B3B3B3;
 }
 
 .form-email::placeholder {
@@ -313,6 +345,7 @@ body {
 }
 
 .btn-submit:hover {
+    -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
     background-color: #ff4a8ee0;
 }
