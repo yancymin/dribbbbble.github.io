@@ -31,11 +31,7 @@ select {
     }
     html {
         background: url(bg.png);
-        /* background-size: 100vw;
-    background-repeat: no-repeat; */
         background-repeat: no-repeat;
-        /* background-attachment: fixed !important; */
-        /* background-size: cover !important; */
         background-position: 0% 30% !important;
     }
     /* body {
@@ -123,8 +119,8 @@ select {
 }
 
 a {
-    -webkit-text-decoration-line: none;
-    text-decoration-line: none;
+    -webkit-text-decoration-line: none !important;
+    text-decoration-line: none !important;
     color: #6F6F6F;
 }
 
@@ -180,14 +176,14 @@ body {
     margin-top: 24px;
 }
 
-.slogn {
+.slogan {
     /* display: inline-block; */
     font-family: 'Roboto', sans-serif;
     font-size: 32px;
     font-weight: 400;
     letter-spacing: 2px;
     color: #FFFFFF;
-    word-spacing: 4px;
+    word-spacing: 2px;
 }
 
 .h2 {
@@ -240,7 +236,7 @@ body {
 }
 
 .footer p :hover {
-    -webkit-text-decoration-line: underline;
-    text-decoration-line: underline;
+    -webkit-text-decoration-line: underline !important;
+    text-decoration-line: underline !important;
     color: #DA4B81;
 }
