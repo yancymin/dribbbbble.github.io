@@ -23,6 +23,10 @@ select {
     padding: 0
 }
 
+input {
+    outline: none;
+}
+
 @media (max-width: 900px) {
     a {
         -webkit-text-decoration-line: none;
@@ -52,6 +56,7 @@ select {
         flex-direction: column;
         -ms-flex-line-pack: start !important;
         align-content: flex-start !important;
+        padding-left: 28px;
     }
     .text-box {
         display: -webkit-box !important;
@@ -67,7 +72,6 @@ select {
         -ms-flex-line-pack: center !important;
         align-content: center !important;
         margin-top: 12vh !important;
-        padding-left: 28px;
         z-index: 100;
     }
     .h1 svg {
@@ -111,6 +115,47 @@ select {
         font-size: 16px !important;
         color: #FFFFFF;
         letter-spacing: 1px;
+    }
+    .form-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80vw !important;
+        height: 60px !important;
+        background-color: #fff;
+        border-radius: 64px;
+    }
+    .form-email {
+        width: 55vw !important;
+        height: 28px !important;
+        border: 0px;
+        border-radius: 64px;
+        padding: 12x 12px 12px 24px !important;
+        resize: none;
+        font-size: 24px;
+        color: #DA4B81;
+    }
+    .form-email::placeholder {
+        font-size: 16px;
+        color: #B3B3B3;
+    }
+    .form-email :focus {
+        outline: none;
+        background-color: #121313;
+    }
+    .btn-submit {
+        width: 48px !important;
+        height: 48px !important;
+        background: #FF4A8E;
+        border-radius: 100% !important;
+        border: 0px;
+        margin-right: 6px;
+        outline: none;
+        cursor: pointer;
+    }
+    .btn-submit:hover {
+        transition: all 0.5s ease;
+        background-color: #ff4a8ee0;
     }
     .footer p :hover {
         -webkit-text-decoration-line: underline;
@@ -223,6 +268,53 @@ body {
     font-weight: 500;
     color: #FFFFFF;
     letter-spacing: 1px;
+}
+
+.form-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 540px;
+    height: 64px;
+    background-color: #fff;
+    border-radius: 64px;
+}
+
+.form-email {
+    width: 380px;
+    height: 32px;
+    border: 0px;
+    border-radius: 64px;
+    padding: 16px 16px 16px 24px;
+    resize: none;
+    font-size: 24px;
+    color: #DA4B81;
+}
+
+.form-email::placeholder {
+    font-size: 16px;
+    color: #B3B3B3;
+}
+
+.form-email :focus {
+    outline: none;
+    background-color: #121313;
+}
+
+.btn-submit {
+    width: 110px;
+    height: 54px;
+    background: #FF4A8E;
+    border-radius: 32px;
+    border: 0px;
+    margin-right: 6px;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    transition: all 0.5s ease;
+    background-color: #ff4a8ee0;
 }
 
 .footer {
