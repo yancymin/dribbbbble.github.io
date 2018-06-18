@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
-    <script src="main.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-98374033-5"></script>
     <script>
@@ -85,6 +84,21 @@
         <form action="https://formspree.io/senseslofter@gmail.com" method="POST">
             <div class="form-wrap">
                 <input type="text" name="_gotcha" style="display:none" />
+                <input  id="hidden" type="hidden" name="_next" value="success.html" />
+                <input class="form-email" id="form-email" type="email" name="_replyto" placeholder="Enter your email" required>
+                <button class="btn-submit" id="btn-submit" type="submit" value="" >
+                    <svg class="submit-icon"  width="23" height="27" viewBox="0 0 23 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.3569 19.7567C22.1294 19.6123 21.8918 19.566 21.6545 19.5729C22.4001 19.5763 23.0034 20.1816 23 20.922C23 21.6692 22.3967 22.2711 21.6477 22.2711H1.35229C0.603271 22.2711 0 21.6692 0 20.922C0 20.1748 0.603271 19.5763 1.34888 19.5729C1.1062 19.5625 0.866943 19.6144 0.631104 19.7666C1.47021 19.2269 2.02856 18.286 2.02856 17.2101V11.2082C2.02856 6.80792 5.21509 3.14105 9.47314 2.23816V2.02368C9.47314 0.906372 10.3818 0 11.5017 0C12.6218 0 13.5303 0.902893 13.5303 2.02368V2.23816C17.7883 3.14105 20.9749 6.8114 20.9749 11.2082V17.2101C20.9749 18.2793 21.5232 19.2155 22.3569 19.7567ZM14.8894 23.6237C14.8894 25.4883 13.374 27 11.5051 27C9.63257 27 8.12085 25.4883 8.12085 23.6237H14.8894Z"
+                            fill="white" />
+                    </svg>
+
+            </div>
+        </form>
+
+        <!-- 
+        <form action="https://api.staticman.net/v2/entry/yancymin/dribbbbble.github.io/origin" method="POST" >
+            <div class="form-wrap">
+                <input type="text" name="_gotcha" style="display:none" />
                 <input type="hidden" name="_next" value="success.html" />
                 <input class="form-email" type="email" name="_replyto" placeholder="Enter your email">
                 <button class="btn-submit" type="submit" value="">
@@ -94,10 +108,11 @@
                     </svg>
 
             </div>
-        </form>
+        </form> -->
+
 
         <p class="msg">We will send the Launching time to your email.</p>
-        
+
 
 
     </div>
@@ -107,6 +122,8 @@
             <a href="http://yancymin.design" target="_blank">YancyMin</a>
         </p>
     </div>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
