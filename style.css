@@ -161,7 +161,7 @@ input:-webkit-autofill {
         padding-left: 16px !important;
         resize: none;
         font-size: 24px;
-        color: #FF4A8E;
+        color: #FF498B;
     }
 }
 
@@ -350,7 +350,7 @@ body {
     resize: none;
     font-size: 16px;
     font-weight: 500;
-    color: #DA4B81;
+    color: #FF498B;
     line-height: 26px;
     background-color: #fff;
 }
